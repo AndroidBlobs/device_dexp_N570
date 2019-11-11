@@ -1,0 +1,45 @@
+#
+# from device/sprd/sharkle/sp9832e_1h10/system.prop
+#
+# Default density config
+#ro.sf.lcd_density=320
+#ro.sf.lcd_width=54
+#ro.sf.lcd_height=96
+ro.product.hardware=sp9832e_1h10
+# Set Opengl ES Version
+#ro.opengles.version=196609
+
+# ro.fm.chip.port.UART.androidm=true
+
+# FRP property for pst device
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist
+
+qemu.hw.mainkeys=0
+
+#enable audio nr tuning
+ro.audio_tunning.nr=1
+
+#set low battery level for disable flash
+persist.sys.cam.battery.flash = 10
+
+#Enable sdcardfs feature
+ro.sys.sdcardfs=true
+persist.sys.sdcardfs=force_on
+
+#enable hdr+normal pic mode
+persist.sys.cam.normalhdr=true
+
+#enable 3d calibration
+persist.sys.3d.calibraion=1
+
+#enable blur mode
+persist.sys.cam.fr.blur.version=1
+persist.sys.cam.ba.blur.version=3
+persist.sys.cam.blur.cov.id=3
+#add by fyl add by fyl Set the camera as the first single mode
+persist.sys.cam.ba.blur.version=0
+persist.sys.cam.fast.thumb=false
+persist.sys.cam.sr.enable=false
+persist.sys.blending.enable=false
+persist.sys.cam.zsl=false
+#
